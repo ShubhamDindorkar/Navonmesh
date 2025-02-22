@@ -21,11 +21,38 @@ body {
 
 /* Header and Navigation */
 .gradient-header {
-  background: linear-gradient(to right, #772F00, black);
+  background: linear-gradient(
+    90deg,
+    #772F00 0%,
+    rgba(119, 47, 0, 0.5) 50%,
+    black 100%
+  );
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+/* Blur effect layer */
+.gradient-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(100px);  /* This creates the 200% blur effect similar to Figma */
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Ensure content stays above blur */
+.nav-menu, .hero-section {
+  position: relative;
+  z-index: 1;
 }
 
 .nav-menu {
