@@ -1,24 +1,27 @@
 import { useState } from 'react'
 import './App.css'
 
+import universityLogo from './assets/des.png'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <header className="gradient-header">
-        <nav className="nav-menu">
-          <h2>Logo</h2>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <nav className="header">
+          <div className="navonmesh-text">NAVONMESH</div>
+          <img src={universityLogo} alt="DES PUNE UNIVERSITY" className="university-logo" />
         </nav>
-        <div className="hero-section">
-          <h1>Welcome to Our Website</h1>
-          <p>Discover amazing things with us</p>
+        <div className="main-content">
+          <h1 className="headline">
+            IGNITE <span className="highlight">CREATIVITY</span>,<br />
+            IGNITE <span className="highlight">INNOVATION!</span>
+          </h1>
+          <p className="subheadline">
+            TECH UNLEASHED: THE ULTIMATE TECH EVENT TO EXPLORE, INNOVATE, AND SHAPE THE FUTURE!
+          </p>
+          <a href="#" className="cta-button">Explore More</a>
         </div>
       </header>
 

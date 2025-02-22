@@ -1,13 +1,17 @@
+/* Import Syne font */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(to bottom, #000000, #1a0f00);
+  min-height: 100vh;
   color: white;
-  font-family: Arial, sans-serif;
 }
 
 #root {
@@ -44,60 +48,85 @@ body {
   right: 0;
   bottom: 0;
   background: inherit;
-  filter: blur(100px);  /* This creates the 200% blur effect similar to Figma */
+  filter: blur(100px);
   opacity: 0.7;
   z-index: 0;
 }
 
-/* Ensure content stays above blur */
-.nav-menu, .hero-section {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
   position: relative;
   z-index: 1;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 5%;
-}
-
-.nav-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-menu a {
+.logo {
   color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.nav-menu a:hover {
-  color: #ff9248;
+.logo span {
+  color: #E5A95E;
 }
 
-/* Hero Section */
-.hero-section {
-  flex: 1;
+.navonmesh-logo {
+  height: 50px;  /* Adjust based on your logo size */
+  width: auto;
+}
+
+.university-logo {
+  height: 60px;  /* Adjust based on your logo size */
+  width: auto;
+}
+
+.main-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 70vh;
   text-align: center;
-  padding: 2rem;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.hero-section h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+.headline {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
-.hero-section p {
+.headline .highlight {
+  color: #E5A95E;
+  font-weight: 300;
+}
+
+.subheadline {
   font-size: 1.5rem;
-  opacity: 0.9;
+  margin-bottom: 3rem;
+  max-width: 900px;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #E5A95E, #FFD700);
+  color: black;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
 }
 
 /* Sections */
@@ -186,18 +215,18 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-menu {
+  .header {
+    padding: 1rem;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
+  .headline {
+    font-size: 2.5rem;
   }
 
-  .hero-section h1 {
-    font-size: 2.5rem;
+  .subheadline {
+    font-size: 1.2rem;
   }
 
   .section {
@@ -239,4 +268,20 @@ footer {
 
 .read-the-docs {
   color: #888;
+}
+
+.navonmesh-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navonmesh-text {
+    font-size: 2rem;
+  }
 }
