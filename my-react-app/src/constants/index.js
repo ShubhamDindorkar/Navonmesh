@@ -94,37 +94,58 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
+    title: "Poster Competition",
+    text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more. Open to all students with teams of up to 4 members.",
+    date: "Navonmesh 2025",
+    status: "progress",
     colorful: true,
+    imageUrl: roadmap1
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    title: "Fall Guys Tournament",
+    text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match. Top players advance to the Final Match where the ultimate champion will be crowned.",
+    date: "Navonmesh 2025",
     status: "progress",
-    imageUrl: roadmap2,
+    colorful: true,
+    imageUrl: roadmap2
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
+    title: "Promptopia AI Battle Royale",
+    text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools. Individual competition with multiple rounds.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    colorful: true,
+    imageUrl: roadmap3
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    title: "Reels Making Competition",
+    text: "Create engaging video content with professional quality standards. Focus on steady footage, proper resolution, and smooth transitions. Online submissions only.",
+    date: "Navonmesh 2025",
     status: "progress",
-    imageUrl: roadmap4,
+    colorful: true,
+    imageUrl: roadmap4
   },
+  {
+    id: "4",
+    title: "Circuit Designing Competition",
+    text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits. Open to undergraduate students in teams of two.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    colorful: true,
+    imageUrl: roadmap1
+  },
+  {
+    id: "5",
+    title: "algoCraft",
+    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. Registration deadline: March 16, 2025.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    colorful: true,
+    imageUrl: roadmap2
+  }
 ];
 
 export const collabText =
