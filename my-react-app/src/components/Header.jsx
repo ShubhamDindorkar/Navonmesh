@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-amber-800 via-neutral-900 to-amber-800 shadow-md py-4 px-8">
+    <header className="bg-gradient-to-r from-black via-neutral-900 to-black shadow-md py-4 px-8">
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="logo">
           <h1 className="text-3xl font-bold text-white font-syncopate">
