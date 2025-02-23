@@ -1,7 +1,7 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
-  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
+  const classes = `button relative inline-flex items-center justify-center h-11 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-orange-500 hover:text-white bg-transparent border-2 border-orange-500 text-orange-500 ${
     px || "px-7"
   } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
   const spanClasses = "relative z-10";

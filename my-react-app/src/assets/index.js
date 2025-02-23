@@ -77,6 +77,8 @@ import twitter from "./socials/twitter.svg";
 
 import navonmesh1 from "./navonmesh1.svg";
 
+import logodes from "./logodes.svg";
+
 export {
   brainwave,
   check,
@@ -147,4 +149,5 @@ export {
   telegram,
   twitter,
   navonmesh1,
+  logodes,
 };
