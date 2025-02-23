@@ -29,7 +29,7 @@ const Hero = () => {
             Unleash the power of AI within Brainwave. Upgrade your productivity
             with Brainwave, the open AI chat app.
           </p>
-          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-white hover:scale-105" white>
+          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105" >
             Register Now
           </Button>
         </div>
@@ -70,12 +70,10 @@ const Hero = () => {
 
             <Gradient />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="absolute inset-0">
             <img
               src={heroBackground}
-              className="w-full"
-              width={1440}
-              height={1800}
+              className="w-full h-full object-cover"
               alt="hero"
             />
           </div>

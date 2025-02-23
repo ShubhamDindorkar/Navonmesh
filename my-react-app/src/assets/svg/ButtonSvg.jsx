@@ -2,36 +2,36 @@ const ButtonSvg = (white) => (
   <>
     <svg
       className="absolute top-0 left-0"
-      width="21"
-      height="44"
-      viewBox="0 0 21 44"
+      width="24"
+      height="48"
+      viewBox="0 0 24 48"
     >
       <path
-        fill={white ? "white" : "none"}
-        stroke={white ? "white" : "url(#btn-left)"} // mentioned in ButtonGradient.jsx
-        strokeWidth="2"
-        d="M21,43.00005 L8.11111,43.00005 C4.18375,43.00005 1,39.58105 1,35.36365 L1,8.63637 C1,4.41892 4.18375,1 8.11111,1 L21,1"
+        fill={white ? "#DAA520" : "url(#btn-left)"} // Changed white to golden color
+        stroke="none"
+        strokeWidth="0"
+        d="M24,47 L9,47 C4,47 1,42 1,37 L1,10 C1,5 4,1 9,1 L24,1"
       />
     </svg>
     <svg
-      className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
-      height="44"
-      viewBox="0 0 100 44"
+      className="absolute top-0 left-[1.5rem] w-[calc(100%-3rem)]"
+      height="48"
+      viewBox="0 0 100 48"
       preserveAspectRatio="none"
-      fill={white ? "white" : "none"}
+      fill={white ? "#DAA520" : "url(#btn-center)"} // Changed white to golden color
     >
       {white ? (
         <polygon
-          fill="white"
+          fill="#DAA520" // Changed white to golden color
           fillRule="nonzero"
-          points="100 0 100 44 0 44 0 0"
+          points="100 0 100 48 0 48 0 0"
         />
       ) : (
         <>
           <polygon
             fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 42 100 44 0 44 0 42"
+            points="100 46 100 48 0 48 0 46"
           />
           <polygon
             fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
@@ -43,15 +43,15 @@ const ButtonSvg = (white) => (
     </svg>
     <svg
       className="absolute top-0 right-0"
-      width="21"
-      height="44"
-      viewBox="0 0 21 44"
+      width="24"
+      height="48"
+      viewBox="0 0 24 48"
     >
       <path
-        fill={white ? "white" : "none"}
-        stroke={white ? "white" : "url(#btn-right)"} // mentioned in ButtonGradient.jsx
-        strokeWidth="2"
-        d="M0,43.00005 L5.028,43.00005 L12.24,43.00005 C16.526,43.00005 20,39.58105 20,35.36365 L20,16.85855 C20,14.59295 18.978,12.44425 17.209,10.99335 L7.187,2.77111 C5.792,1.62675 4.034,1 2.217,1 L0,1"
+        fill={white ? "#DAA520" : "url(#btn-right)"} // Changed white to golden color
+        stroke="none"
+        strokeWidth="0"
+        d="M0,47 L6,47 L14,47 C18,47 22,42 22,37 L22,18 C22,15 21,12 19,10 L8,2 C6,1 4,1 2,1 L0,1"
       />
     </svg>
   </>
