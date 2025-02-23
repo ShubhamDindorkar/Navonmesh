@@ -5,22 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+  background-color: black;
   min-height: 100vh;
   width: 100%;
-  background-color: black;
-  color: white;
 }
 
 #root {
   min-height: 100vh;
   width: 100%;
+  background-color: black;
 }
 
 @layer base {
