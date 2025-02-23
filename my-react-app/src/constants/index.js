@@ -49,7 +49,7 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Pricing",
+    title: "Schedule",
     url: "#pricing",
   },
   {
