@@ -44,8 +44,8 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Features",
-    url: "#features",
+    title: "Events",
+    url: "#roadmap",
   },
   {
     id: "2",
@@ -54,8 +54,8 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "EVENTS",
-    url: "#roadmap",
+    title: "Benefits",
+    url: "#features",
   },
   {
     id: "4",
