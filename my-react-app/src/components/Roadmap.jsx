@@ -81,10 +81,6 @@ const Roadmap = () => {
         <Gradient />
         </div>
 
-        <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-          <Button href="#roadmap">View all events</Button>
-        </div>
-
         {selectedEvent && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
             <div className="relative w-full max-w-2xl p-8 bg-n-8 rounded-[2.5rem] max-h-[90vh] overflow-y-auto">
