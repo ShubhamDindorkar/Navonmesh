@@ -392,35 +392,38 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Day 1 - March 16, 2025",
+    description: "Opening Day Events",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "9:00 AM - Registration Begins",
+      "10:00 AM - Poster Competition Setup",
+      "11:00 AM - algoCraft Round 1",
+      "2:00 PM - Circuit Design Competition",
+      "4:00 PM - Fall Guys Tournament"
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Day 2 - March 17, 2025",
+    description: "Main Competition Day",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "9:00 AM - algoCraft Round 2",
+      "11:00 AM - Promptopia AI Battle",
+      "2:00 PM - Reels Competition",
+      "4:00 PM - algoCraft Finals",
+      "6:00 PM - Awards Ceremony"
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Important Notes",
+    description: "Event Information",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Venue: DES Pune University",
+      "Bring Valid ID Cards",
+      "Registration Required",
+      "Refreshments Provided",
+      "Technical Support Available"
     ],
   },
 ];

@@ -16,9 +16,9 @@ const App = () => {
         <Hero />
         <Services />
         <Roadmap />
+        <Pricing />
         <Benefits />
         <Collaboration />
-        <Pricing />
         <Footer />
       </div>
 
