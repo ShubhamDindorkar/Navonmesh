@@ -28,8 +28,8 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag="Event Schedule"
+          title="Competition Timeline"
         />
 
         <div className="relative">
@@ -39,12 +39,9 @@ const Pricing = () => {
         </div>
 
         <div className="flex justify-center mt-10">
-          <a
-            className="text-xs font-code font-bold tracking-wider uppercase border-b"
-            href="/pricing"
-          >
-            See the full details
-          </a>
+          <p className="text-xs font-code font-bold tracking-wider uppercase text-n-1/50">
+            * All times are in IST (Indian Standard Time)
+          </p>
         </div>
       </div>
     </Section>
