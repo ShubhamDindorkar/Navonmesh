@@ -25,11 +25,10 @@ const Hero = () => {
           <h1 className="text-[70px] font-syncopate font-normal bg-gradient-to-r from-white to-orange-500 bg-clip-text text-transparent mb-6 leading-tight">
             <span>IGNITE CREATIVITY IGNITE INNOVATION!</span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unleash the power of AI within Brainwave. Upgrade your productivity
-            with Brainwave, the open AI chat app.
+          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 font-saira-condensed">
+          TECH UNLEASHED: THE ULTIMATE TECH EVENT TO EXPLORE, INNOVATE, AND SHAPE THE FUTURE!
           </p>
-          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-white hover:scale-105" white>
+          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105" >
             Register Now
           </Button>
         </div>
@@ -70,12 +69,10 @@ const Hero = () => {
 
             <Gradient />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="absolute inset-0">
             <img
               src={heroBackground}
-              className="w-full"
-              width={1440}
-              height={1800}
+              className="w-full h-full object-cover"
               alt="hero"
             />
           </div>
