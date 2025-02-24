@@ -71,7 +71,7 @@ const Roadmap = () => {
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
                   <p className="body-2 text-n-4 mb-6">{item.text}</p>
-                  <Button className="w-full" onClick={() => handleExplore(item)}>Explore</Button>
+                  <Button className="w-full text-black" onClick={() => handleExplore(item)}>Explore</Button>
                 </div>
               </div>
             </div>
