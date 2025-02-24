@@ -3,16 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Raj-Shinde-045/Navonmesh",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
-
-
+    "deploy": "gh-pages -d dist --maxFileLength 255"
   },
-
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,9 +20,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-
     "@types/react": "^18.2.55",
-
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
