@@ -8,12 +8,10 @@ import {
   disc02,
   discord,
   discordBlack,
-  facebook,
   figma,
   file02,
   framer,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
@@ -31,10 +29,10 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
 } from "../assets";
+
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 import roadmap5 from "../assets/roadmap/image-5.png";
 import roadmap6 from "../assets/roadmap/image-6.png";
@@ -59,18 +57,6 @@ export const navigation = [
     id: "3",
     title: "Benefits",
     url: "#features",
-  },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
   },
 ];
 
@@ -487,32 +473,32 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Facebook",
+    icon: FaFacebookF,
+    url: "https://www.facebook.com/DESPuneUniversity",
   },
   {
     id: "1",
     title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    icon: FaTwitter,
+    url: "https://x.com/des_pune",
   },
   {
     id: "2",
     title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/despuofficial/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "LinkedIn",
+    icon: FaLinkedinIn,
+    url: "https://www.linkedin.com/school/des-pune-university/posts/?feedView=all&viewAsMember=true",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "YouTube",
+    icon: FaYoutube,
+    url: "https://www.youtube.com/@DESPuneUniversity_",
   },
 ];

@@ -14,10 +14,10 @@ const Benefits = () => {
           title="Why Join Navonmesh Tech Fest?"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 md:max-w-[24rem] hover:scale-105 transform transition-all duration-500 ease-in-out hover:-translate-y-2 hover:shadow-xl hover:shadow-n-1/10"
+              className="block relative p-0.5 hover:scale-105 transform transition-all duration-500 ease-in-out hover:-translate-y-2 hover:shadow-xl hover:shadow-n-1/10"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
                 backgroundSize: '100% 100%',
