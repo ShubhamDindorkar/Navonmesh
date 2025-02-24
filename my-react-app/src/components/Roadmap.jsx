@@ -29,15 +29,15 @@ const Roadmap = () => {
 
           return (
             <div
-              className={`flex flex-col even:md:translate-y-[5rem] p-0.25 rounded-[1.5rem] sm:rounded-[2rem] ${
+              className={`flex flex-col even:md:translate-y-[5rem] p-0.5 rounded-[1.5rem] sm:rounded-[2rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              } hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out`}
+              } hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out w-full`}
               key={item.id}
             >
-              <div className="relative p-4 sm:p-6 bg-n-8 rounded-[1.4375rem] sm:rounded-[1.9375rem] overflow-hidden xl:p-12">
-                <div className="absolute top-0 left-0 max-w-full">
+              <div className="relative p-4 sm:p-8 md:p-12 bg-n-8 rounded-[1.4375rem] sm:rounded-[1.9375rem] overflow-hidden h-full">
+                <div className="absolute top-0 left-0 w-full h-full">
                   <img
-                    className="w-full"
+                    className="w-full h-full object-cover opacity-10"
                     src={grid}
                     width={500}
                     height={500}
@@ -45,33 +45,31 @@ const Roadmap = () => {
                   />
                 </div>
                 <div className="relative z-1">
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-[27rem] mb-4 sm:mb-6 md:mb-16 gap-3">
-                    <Tagline>{item.date}</Tagline>
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 md:mb-8 gap-3">
+                    <Tagline className="text-base sm:text-lg">{item.date}</Tagline>
 
                     <div className="flex items-center px-3 sm:px-4 py-1 bg-n-1 rounded text-n-8">
                       <img
-                        className="mr-2"
+                        className="mr-2 w-4 h-4 sm:w-5 sm:h-5"
                         src={item.status === "done" ? check2 : loading1}
-                        width={16}
-                        height={16}
                         alt={status}
                       />
-                      <div className="tagline text-sm">{status}</div>
+                      <div className="tagline text-sm sm:text-base">{status}</div>
                     </div>
                   </div>
 
-                  <div className="mb-6 sm:mb-8 -mx-4 sm:-mx-12">
+                  <div className="relative mb-6 sm:mb-8 -mx-4 sm:-mx-8 md:-mx-12 aspect-[16/9] overflow-hidden rounded-lg">
                     <img
-                      className="w-full h-auto object-cover rounded-lg"
+                      className="w-full h-full object-cover"
                       src={item.imageUrl}
-                      width={580}
-                      height={380}
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{item.title}</h4>
-                  <p className="text-sm sm:text-base text-n-4 mb-4 sm:mb-6 line-clamp-3">{item.text}</p>
-                  <Button className="w-full text-black text-sm sm:text-base" onClick={() => handleExplore(item)}>Explore</Button>
+                  <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">{item.title}</h4>
+                  <p className="text-base sm:text-lg text-n-4 mb-6 sm:mb-8 line-clamp-3">{item.text}</p>
+                  <Button className="w-full text-black text-base sm:text-lg py-3 sm:py-4" onClick={() => handleExplore(item)}>
+                    Explore
+                  </Button>
                 </div>
               </div>
             </div>
