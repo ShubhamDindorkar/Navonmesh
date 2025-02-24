@@ -484,32 +484,32 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://www.instagram.com/despuofficial/?hl=en",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Facebook",
+    iconUrl: facebook,
+    url: "https://www.facebook.com/DESPuneUniversity/",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    title: "LinkedIn",
+    iconUrl: twitter, // Using twitter icon temporarily for LinkedIn
+    url: "https://www.linkedin.com/school/des-pune-university/?viewAsMember=true",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "YouTube",
+    iconUrl: telegram, // Using telegram icon temporarily for YouTube
+    url: "https://www.youtube.com/@DESPuneUniversity_",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "X",
+    iconUrl: twitter,
+    url: "https://x.com/des_pune",
   },
 ];
