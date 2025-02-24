@@ -21,7 +21,7 @@ const Services = () => {
         />
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
+          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem] transition-transform duration-300 hover:scale-105">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
                 className="w-full h-full object-cover md:object-right"
@@ -59,7 +59,7 @@ const Services = () => {
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
+            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="absolute inset-0">
                 <img
                   src={service2}
@@ -79,7 +79,7 @@ const Services = () => {
               <PhotoChatMessage />
             </div>
 
-            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
+            <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="absolute inset-0">
                 <img
                   src={service2}
