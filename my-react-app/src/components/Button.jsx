@@ -1,5 +1,6 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
+// Updated button component with black text
 const Button = ({ className, href, onClick, children, px, white }) => {
   const classes = `button relative inline-flex items-center justify-center h-11 transition-transform duration-300 ease-in-out rounded-full bg-gradient-to-r from-[#FFB347] to-[#FFCC33] hover:from-[#FFD700] hover:to-[#FFF8DC] ${
     px || "px-7"
