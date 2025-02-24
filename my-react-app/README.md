@@ -101,6 +101,50 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
+## 🚀 Deployment to GitHub Pages
+
+To deploy the project to GitHub Pages:
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+3. Your site will be live at:
+   ```
+   https://raj-shinde-045.github.io/Navonmesh/
+   ```
+
+Note: Make sure you have committed all changes and pushed to your GitHub repository before deploying.
+
+
+## <a name="deployment">🚀 Deployment to GitHub Pages</a>
+
+Follow these steps to deploy the project to GitHub Pages:
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+3. Your site will be live at:
+   ```
+   https://<your-github-username>.github.io/Navonmesh/
+   ```
+
+Note: Make sure you have pushed your code to GitHub before deploying.
+
+
 ## <a name="snippets">🕸️ Snippets</a>
 
 <details>
