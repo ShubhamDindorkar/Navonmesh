@@ -31,7 +31,7 @@ const Roadmap = () => {
             <div
               className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              }`}
+              } hover:shadow-lg hover:scale-105 transition-transform duration-300`}
               key={item.id}
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">

@@ -36,6 +36,9 @@ import {
   yourlogo,
 } from "../assets";
 
+import roadmap5 from "../assets/roadmap/image-5.png";
+import roadmap6 from "../assets/roadmap/image-6.png";
+
 export const navigation = [
   {
     id: "0",
@@ -126,7 +129,7 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap1
+    imageUrl: roadmap5
   },
   {
     id: "1",
@@ -307,7 +310,7 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap2
+    imageUrl: roadmap6
   }
 ];
 
