@@ -20,21 +20,21 @@ const Roadmap = () => {
 
   return (
     <Section className="overflow-hidden" id="roadmap">
-      <div className="container md:pb-10">
+      <div className="container px-4 sm:px-6 md:px-8 md:pb-10">
         <Heading tag="Navonmesh 2025" title="Tech Competitions" />
 
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-8 md:pb-[7rem]">
+        <div className="relative grid gap-4 sm:gap-6 md:grid-cols-2 md:gap-8 md:pb-[7rem]">
           {roadmap.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress";
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[5rem] p-0.25 rounded-[2rem] ${
+              className={`flex flex-col even:md:translate-y-[5rem] p-0.25 rounded-[1.5rem] sm:rounded-[2rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
               } hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out`}
               key={item.id}
             >
-              <div className="relative p-6 bg-n-8 rounded-[1.9375rem] overflow-hidden xl:p-12">
+              <div className="relative p-4 sm:p-6 bg-n-8 rounded-[1.4375rem] sm:rounded-[1.9375rem] overflow-hidden xl:p-12">
                 <div className="absolute top-0 left-0 max-w-full">
                   <img
                     className="w-full"
@@ -45,33 +45,33 @@ const Roadmap = () => {
                   />
                 </div>
                 <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-6 md:mb-16">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-[27rem] mb-4 sm:mb-6 md:mb-16 gap-3">
                     <Tagline>{item.date}</Tagline>
 
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
+                    <div className="flex items-center px-3 sm:px-4 py-1 bg-n-1 rounded text-n-8">
                       <img
-                        className="mr-2.5"
+                        className="mr-2"
                         src={item.status === "done" ? check2 : loading1}
                         width={16}
                         height={16}
                         alt={status}
                       />
-                      <div className="tagline">{status}</div>
+                      <div className="tagline text-sm">{status}</div>
                     </div>
                   </div>
 
-                  <div className="mb-8 -my-8 -mx-12">
+                  <div className="mb-6 sm:mb-8 -mx-4 sm:-mx-12">
                     <img
-                      className="w-full"
+                      className="w-full h-auto object-cover rounded-lg"
                       src={item.imageUrl}
                       width={580}
                       height={380}
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4 mb-6 line-clamp-3">{item.text}</p>
-                  <Button className="w-full text-black" onClick={() => handleExplore(item)}>Explore</Button>
+                  <h4 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{item.title}</h4>
+                  <p className="text-sm sm:text-base text-n-4 mb-4 sm:mb-6 line-clamp-3">{item.text}</p>
+                  <Button className="w-full text-black text-sm sm:text-base" onClick={() => handleExplore(item)}>Explore</Button>
                 </div>
               </div>
             </div>
@@ -83,28 +83,28 @@ const Roadmap = () => {
 
         {selectedEvent && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
-            <div className="relative w-full max-w-2xl p-8 bg-n-8 rounded-[2.5rem] max-h-[90vh] overflow-y-auto">
+            <div className="relative w-full max-w-[90%] sm:max-w-2xl p-4 sm:p-8 bg-n-8 rounded-2xl sm:rounded-[2.5rem] max-h-[90vh] overflow-y-auto">
               <button
-                className="absolute top-6 right-6 text-n-4 hover:text-n-1"
+                className="absolute top-4 right-4 sm:top-6 sm:right-6 text-n-4 hover:text-n-1"
                 onClick={closeModal}
               >
                 ✕
               </button>
-              <h3 className="h3 mb-4">{selectedEvent.title}</h3>
-              <div className="space-y-6 text-n-4">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">{selectedEvent.title}</h3>
+              <div className="space-y-4 sm:space-y-6 text-n-4">
                 {selectedEvent.details && (
-                  <div className="space-y-6">
+                  <div className="space-y-4 sm:space-y-6">
                     {selectedEvent.details.description && (
                       <div>
-                        <p className="text-n-1">{selectedEvent.details.description}</p>
+                        <p className="text-sm sm:text-base text-n-1">{selectedEvent.details.description}</p>
                       </div>
                     )}
                     {selectedEvent.details.topics && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">Topics of Interest</h5>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Topics of Interest</h5>
                         <ul className="list-none space-y-2">
                           {selectedEvent.details.topics.map((topic, index) => (
-                            <li key={index} className="flex items-start">
+                            <li key={index} className="flex items-start text-sm sm:text-base">
                               <span className="mr-2">•</span>
                               <span>{topic}</span>
                             </li>
@@ -166,18 +166,18 @@ const Roadmap = () => {
                     )}
                   </div>
                 )}
-                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
                   <Button
                     href={selectedEvent.rulebookUrl || "#"}
                     target="_blank"
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto text-sm sm:text-base"
                   >
                     Download Rulebook
                   </Button>
                   <Button
                     href={selectedEvent.registrationUrl || "#"}
                     target="_blank"
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto text-sm sm:text-base"
                   >
                     Register Now
                   </Button>
