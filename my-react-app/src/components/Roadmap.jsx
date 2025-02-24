@@ -23,29 +23,29 @@ const Roadmap = () => {
       <div className="container md:pb-10">
         <Heading tag="Navonmesh 2025" title="Tech Competitions" />
 
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+        <div className="relative grid gap-6 md:grid-cols-2 md:gap-8 md:pb-[7rem]">
           {roadmap.map((item) => {
           const status = item.status === "done" ? "Done" : "In progress";
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+              className={`md:flex even:md:translate-y-[5rem] p-0.25 rounded-[2rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              } hover:shadow-lg hover:scale-105 transition-transform duration-300`}
+              } hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out`}
               key={item.id}
             >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+              <div className="relative p-6 bg-n-8 rounded-[1.9375rem] overflow-hidden xl:p-12">
                 <div className="absolute top-0 left-0 max-w-full">
                   <img
                     className="w-full"
                     src={grid}
-                    width={550}
-                    height={550}
+                    width={500}
+                    height={500}
                     alt="Grid"
                   />
                 </div>
                 <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                  <div className="flex items-center justify-between max-w-[27rem] mb-6 md:mb-16">
                     <Tagline>{item.date}</Tagline>
 
                     <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
@@ -60,17 +60,17 @@ const Roadmap = () => {
                     </div>
                   </div>
 
-                  <div className="mb-10 -my-10 -mx-15">
+                  <div className="mb-8 -my-8 -mx-12">
                     <img
                       className="w-full"
                       src={item.imageUrl}
-                      width={628}
-                      height={426}
+                      width={580}
+                      height={380}
                       alt={item.title}
                     />
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4 mb-6">{item.text}</p>
+                  <p className="body-2 text-n-4 mb-6 line-clamp-3">{item.text}</p>
                   <Button className="w-full text-black" onClick={() => handleExplore(item)}>Explore</Button>
                 </div>
               </div>

@@ -22,13 +22,13 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="text-[70px] font-syncopate font-normal bg-gradient-to-r from-white to-orange-500 bg-clip-text text-transparent mb-6 leading-tight">
+          <h1 className="text-[70px] font-syncopate font-normal bg-gradient-to-r from-white to-orange-500 bg-clip-text text-transparent mb-6 leading-tight animate-fade-in">
             <span>IGNITE CREATIVITY IGNITE INNOVATION!</span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 font-saira-condensed">
-          TECH UNLEASHED: THE ULTIMATE TECH EVENT TO EXPLORE, INNOVATE, AND SHAPE THE FUTURE!
+          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 font-saira-condensed animate-fade-in delay-200">
+            TECH UNLEASHED: THE ULTIMATE TECH EVENT TO EXPLORE, INNOVATE, AND SHAPE THE FUTURE!
           </p>
-          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105 text-black" >
+          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105 text-black animate-fade-in delay-400">
             Register Now
           </Button>
         </div>
