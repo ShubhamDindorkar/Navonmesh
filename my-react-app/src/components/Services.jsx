@@ -62,7 +62,7 @@ const Services = () => {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden transition-transform duration-300 hover:scale-105">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src={service3}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
