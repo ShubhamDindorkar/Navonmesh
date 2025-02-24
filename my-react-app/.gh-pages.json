@@ -1,0 +1,5 @@
+{
+  "src": "dist/**/*",
+  "dest": ".",
+  "message": "Deploy to GitHub Pages [skip ci]"
+}
