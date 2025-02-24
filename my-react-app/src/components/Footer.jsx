@@ -36,7 +36,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-n-4 hover:text-n-1 transition-colors"
               >
-                {item.title === 'Twitter' ? '🐦 ' : item.title === 'Facebook' ? '👥 ' : item.title === 'LinkedIn' ? '💼 ' : '🌐 '}{item.title}
+                {item.title === 'Instagram' ? '📸 ' : item.title === 'Facebook' ? '📱 ' : item.title === 'LinkedIn' ? '💼 ' : item.title === 'YouTube' ? '🎥 ' : '🐦 '}{item.title}
               </a>
             ))}
           </ul>

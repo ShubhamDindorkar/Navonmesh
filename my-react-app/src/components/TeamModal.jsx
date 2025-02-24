@@ -15,7 +15,7 @@ const TeamModal = ({ isOpen, onClose }) => {
       <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose}></div>
       <div className="relative bg-n-8 rounded-2xl p-6 max-w-md w-full mx-4 border border-n-6">
         <div className="text-center mb-6">
-          <h3 className="h4 mb-2">Our Team</h3>
+          <h3 className="h4 mb-2">Binary Brains</h3>
           <p className="text-n-4">The creators behind this website</p>
         </div>
         
