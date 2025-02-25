@@ -173,7 +173,7 @@ const Roadmap = () => {
                     Download Rulebook
                   </Button>
                   <Button
-                    href={selectedEvent.registrationUrl || "#"}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScf9nY4_HNmwNb9-EYHOb3tzksKrC7JwXErk8QQGCh0HQQAEA/viewform"
                     target="_blank"
                     className="w-full sm:w-auto text-sm sm:text-base"
                   >
