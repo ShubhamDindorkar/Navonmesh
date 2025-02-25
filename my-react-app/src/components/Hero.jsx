@@ -28,7 +28,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 font-saira-condensed animate-fade-in delay-200">
             TECH UNLEASHED: THE ULTIMATE TECH EVENT TO EXPLORE, INNOVATE, AND SHAPE THE FUTURE!
           </p>
-          <Button href="/pricing" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105 text-black animate-fade-in delay-400">
+          <Button href="https://docs.google.com/forms/d/e/1FAIpQLScf9nY4_HNmwNb9-EYHOb3tzksKrC7JwXErk8QQGCh0HQQAEA/viewform" className="transition duration-300 ease-in-out transform hover:bg-orange-500 hover:text-black hover:scale-105 text-black animate-fade-in delay-400">
             Register Now
           </Button>
         </div>
