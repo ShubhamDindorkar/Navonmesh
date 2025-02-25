@@ -7,19 +7,19 @@ const TeamCredits = () => {
   const teamMembers = [
     { 
       name: "RAJ DILIP SHINDE", 
-      linkedin: "https://www.linkedin.com/in/raj-shinde"
+      linkedin: "https://www.linkedin.com/in/raj-shinde-045n"
     },
     { 
       name: "SHUBHAM DEEPAK DINDORKAR", 
-      linkedin: "https://www.linkedin.com/in/shubham-dindorkar"
+      linkedin: "https://www.linkedin.com/in/shubham-dindorkar-a53059348"
     },
     { 
       name: "AYUSH BRIJESH TRIPATHI", 
-      linkedin: "https://www.linkedin.com/in/ayush-tripathi"
+      linkedin: "https://www.linkedin.com/in/ayush-tripathi-91bab9349"
     },
     { 
       name: "ASHITOSH ASHOK LAVHATE", 
-      linkedin: "https://www.linkedin.com/in/ashitosh-lavhate"
+      linkedin: "https://www.linkedin.com/in/ashitosh01"
     },
   ];
 
