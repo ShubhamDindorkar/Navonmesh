@@ -83,7 +83,7 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "algoCraft",
+    title: "Poster Competition",
     text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more. Open to all students with teams of up to 4 members.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -115,11 +115,11 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap4
+    imageUrl: roadmap5
   },
   {
     id: "1",
-    title: "Circuit Designing Competition",
+    title: "Fall Guys Tournament",
     text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match. Top players advance to the Final Match where the ultimate champion will be crowned.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -146,11 +146,11 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap1
+    imageUrl: roadmap2
   },
   {
     id: "2",
-    title: "Poster Competition",
+    title: "Promptopia AI Battle Royale",
     text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools. Individual competition with multiple rounds.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -176,11 +176,11 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap5
+    imageUrl: roadmap3
   },
   {
     id: "3",
-    title: "Promptopia AI Battle Royale",
+    title: "Reels Making Competition",
     text: "Create engaging video content with professional quality standards. Focus on steady footage, proper resolution, and smooth transitions. Online submissions only.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -202,11 +202,11 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap3
+    imageUrl: roadmap4
   },
   {
     id: "4",
-    title: "Fall Guys Tournament",
+    title: "Circuit Designing Competition",
     text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits. Open to undergraduate students in teams of two.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -237,11 +237,11 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap2
+    imageUrl: roadmap1
   },
   {
     id: "5",
-    title: "Reels Making Competition",
+    title: "algoCraft",
     text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. Registration deadline: March 16, 2025.",
     date: "Navonmesh 2025",
     status: "progress",
@@ -296,7 +296,7 @@ export const roadmap = [
       ]
     },
     colorful: true,
-    imageUrl: roadmap4
+    imageUrl: roadmap6
   }
 ];
 
