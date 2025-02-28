@@ -381,7 +381,7 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Day 1 - March 16, 2025",
+    title: "Day 1 - March 17, 2025",
     description: "Opening Day Events",
     features: [
       "9:00 AM - Registration Begins",
@@ -393,7 +393,7 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Day 2 - March 17, 2025",
+    title: "Day 2 - March 18, 2025",
     description: "Main Competition Day",
     features: [
       "9:00 AM - algoCraft Round 2",
