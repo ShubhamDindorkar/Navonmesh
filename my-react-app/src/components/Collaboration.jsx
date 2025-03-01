@@ -41,7 +41,7 @@ const FAQ = () => {
     {
       id: 5,
       question: "Is there a registration fee?",
-      answer: "Yes, there is a nominal registration fee that varies by event. Early bird registrations may get special discounts."
+      answer: "Yes, there is a nominal registration fee that varies by event."
     }
   ];
   return (
