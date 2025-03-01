@@ -378,10 +378,14 @@ export const collabApps = [
   },
 ];
 
+import desLogo from "../assets/logodes.svg";
+import ietLogo from "../assets/iet-logo.jpg";
+import iicLogo from "../assets/iiclogo.png";
+
 export const pricing = [
   {
     id: "0",
-    title: "Day 1 - March 16, 2025",
+    title: "Day 1 - March 17, 2025",
     description: "Opening Day Events",
     features: [
       "9:00 AM - Registration Begins",
@@ -393,7 +397,7 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Day 2 - March 17, 2025",
+    title: "Day 2 - March 18, 2025",
     description: "Main Competition Day",
     features: [
       "9:00 AM - algoCraft Round 2",
@@ -416,6 +420,21 @@ export const pricing = [
     ],
   },
 ];
+
+export const eventOrganizers = {
+  organizer: {
+    name: "DES Pune University",
+    logo: desLogo
+  },
+  supporter: {
+    name: "IIC",
+    logo: iicLogo
+  },
+  sponsor: {
+    name: "IET Pune LN",
+    logo: ietLogo
+  }
+};
 
 export const benefits = [
   {
