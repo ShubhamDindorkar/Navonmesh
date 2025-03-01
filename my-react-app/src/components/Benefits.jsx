@@ -4,6 +4,7 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import EventOrganizers from "./EventOrganizers";
 
 const Benefits = () => {
   return (
@@ -61,6 +62,10 @@ const Benefits = () => {
               <ClipPath />
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 pt-10 border-t border-n-6">
+          <EventOrganizers />
         </div>
       </div>
     </Section>

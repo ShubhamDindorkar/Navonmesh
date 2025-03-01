@@ -378,6 +378,10 @@ export const collabApps = [
   },
 ];
 
+import desLogo from "../assets/logodes.svg";
+import ietLogo from "../assets/iet-logo-removebg-preview.png";
+import iicLogo from "../assets/iiclogo.png";
+
 export const pricing = [
   {
     id: "0",
@@ -416,6 +420,21 @@ export const pricing = [
     ],
   },
 ];
+
+export const eventOrganizers = {
+  organizer: {
+    name: "DES Pune University",
+    logo: desLogo
+  },
+  supporter: {
+    name: "IIC",
+    logo: iicLogo
+  },
+  sponsor: {
+    name: "IET Pune LN",
+    logo: ietLogo
+  }
+};
 
 export const benefits = [
   {
