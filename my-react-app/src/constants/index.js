@@ -379,7 +379,7 @@ export const collabApps = [
 ];
 
 import desLogo from "../assets/logodes.svg";
-import ietLogo from "../assets/iet-logo.jpg";
+import ietLogo from "../assets/iet-logo-removebg-preview.png";
 import iicLogo from "../assets/iiclogo.png";
 
 export const pricing = [
