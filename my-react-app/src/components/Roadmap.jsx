@@ -110,6 +110,77 @@ const Roadmap = () => {
                         </ul>
                       </div>
                     )}
+                    {selectedEvent.details.technical_requirements && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Technical Requirements</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.technical_requirements.map((req, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">•</span>
+                              <span>{req}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.frame_rates && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Frame Rates</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.frame_rates.map((rate, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">•</span>
+                              <span>{rate}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.filming_tips && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Filming Tips</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.filming_tips.map((tip, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">•</span>
+                              <span>{tip}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.evaluation_criteria && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Evaluation Criteria</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.evaluation_criteria.map((criteria, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">•</span>
+                              <span>{criteria}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.important_guidelines && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Important Guidelines</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.important_guidelines.map((guideline, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">•</span>
+                              <span>{guideline}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.disclaimer && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Disclaimer</h5>
+                        <p className="text-sm sm:text-base">{selectedEvent.details.disclaimer}</p>
+                      </div>
+                    )}
                     {selectedEvent.details.guidelines && (
                       <div>
                         <h5 className="h6 mb-3 text-n-1">Guidelines</h5>
