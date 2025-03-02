@@ -97,69 +97,101 @@ const Roadmap = () => {
                         <p className="text-sm sm:text-base text-n-1">{selectedEvent.details.description}</p>
                       </div>
                     )}
-                    {selectedEvent.details.topics && (
-                      <div>
-                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">Topics of Interest</h5>
-                        <ul className="list-none space-y-2">
-                          {selectedEvent.details.topics.map((topic, index) => (
-                            <li key={index} className="flex items-start text-sm sm:text-base">
-                              <span className="mr-2">•</span>
-                              <span>{topic}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
                     {selectedEvent.details.guidelines && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">Guidelines</h5>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">📌 Competition Guidelines</h5>
                         <ul className="list-none space-y-2">
                           {selectedEvent.details.guidelines.map((guideline, index) => (
-                            <li key={index} className="flex items-start">
-                              <span className="mr-2">•</span>
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">✅</span>
                               <span>{guideline}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                     )}
-                    {selectedEvent.details.submission && (
+                    {selectedEvent.details.technical_specs && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">Submission</h5>
-                        <p>{selectedEvent.details.submission}</p>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">🎥 Technical Specifications</h5>
+                        <div className="space-y-4">
+                          <div>
+                            <h6 className="font-semibold mb-2 text-n-1">Frame Rate (Recommended):</h6>
+                            <ul className="list-none space-y-1">
+                              {selectedEvent.details.technical_specs.frame_rates.map((rate, index) => (
+                                <li key={index} className="flex items-start text-sm sm:text-base">
+                                  <span className="mr-2">•</span>
+                                  <span>{rate}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div>
+                            <h6 className="font-semibold mb-2 text-n-1">Filming Tips:</h6>
+                            <ul className="list-none space-y-1">
+                              {selectedEvent.details.technical_specs.filming_tips.map((tip, index) => (
+                                <li key={index} className="flex items-start text-sm sm:text-base">
+                                  <span className="mr-2">•</span>
+                                  <span>{tip}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     )}
-                    {selectedEvent.details.eligibility && (
+                    {selectedEvent.details.evaluation_criteria && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">Eligibility</h5>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">📊 Evaluation Criteria</h5>
                         <ul className="list-none space-y-2">
-                          {selectedEvent.details.eligibility.map((item, index) => (
-                            <li key={index} className="flex items-start">
-                              <span className="mr-2">•</span>
-                              <span>{item}</span>
+                          {selectedEvent.details.evaluation_criteria.map((criteria, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">✅</span>
+                              <span>{criteria}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                     )}
-                    {selectedEvent.details.prizes && (
+                    {selectedEvent.details.important_guidelines && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">Prizes</h5>
-                        <p>{selectedEvent.details.prizes}</p>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">⚠ Important Guidelines</h5>
+                        <ul className="list-none space-y-2">
+                          {selectedEvent.details.important_guidelines.map((guideline, index) => (
+                            <li key={index} className="flex items-start text-sm sm:text-base">
+                              <span className="mr-2">{index + 1}.</span>
+                              <span>{guideline}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {selectedEvent.details.disclaimer && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">📜 Disclaimer</h5>
+                        <p className="text-sm sm:text-base">{selectedEvent.details.disclaimer}</p>
+                      </div>
+                    )}
+                    {selectedEvent.details.submission && (
+                      <div>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">📤 Submission</h5>
+                        <p className="text-sm sm:text-base">{selectedEvent.details.submission}</p>
                       </div>
                     )}
                     {selectedEvent.details.contacts && (
                       <div>
-                        <h5 className="h6 mb-3 text-n-1">For Queries</h5>
+                        <h5 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-n-1">📞 For Queries</h5>
                         <ul className="space-y-2">
                           {selectedEvent.details.contacts.map((contact, index) => (
-                            <li key={index} className="flex items-center">
+                            <li key={index} className="flex items-center text-sm sm:text-base">
                               <span className="text-n-1">{contact.name}</span>
                               <span className="mx-2">-</span>
                               <span>{contact.phone}</span>
                             </li>
                           ))}
                         </ul>
+                        {selectedEvent.details.prepared_by && (
+                          <p className="mt-4 text-sm text-n-3">Prepared by: {selectedEvent.details.prepared_by}</p>
+                        )}
                       </div>
                     )}
                   </div>

@@ -195,21 +195,43 @@ export const roadmap = [
   {
     id: "3",
     title: "Reels Making Competition",
-    text: "Create engaging video content with professional quality standards. Focus on steady footage, proper resolution, and smooth transitions. Online submissions only.",
+    text: "🎥 Showcase Your Creativity & Capture the Spirit of Navonmesh 2025! Create engaging Instagram reels highlighting the technological innovations and exciting moments of the event.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
-      description: "🎬 Showcase Your Creativity Through Video! Unleash your innovation and storytelling skills in our exciting Reels Making Competition. Stand out with your editing techniques and visual storytelling!",
+      description: "Unleash your creativity and storytelling skills in the Reel Making Competition at Navonmesh 2025, the flagship technology event of DES Pune University! Capture the most exciting moments, blending creativity with clear and effective technology communication, highlight key insights, and share your unique perspective through engaging reels.",
       guidelines: [
-        "Use a tripod or stabilizer for steady footage",
-        "16:9 for most videos, 9:16 for vertical content",
-        "Capture extra clips for smooth transitions",
-        "Use at least 1080p or 4K resolution",
-        "24fps for cinematic look, 30fps for general videos, 60fps+ for slow motion",
-        "Ensure smooth transitions and natural cuts"
+        "Theme: Event Highlights of Navonmesh 2025",
+        "Platform: Instagram Reels",
+        "Mandatory Hashtag: #DESPU",
+        "Maximum Duration: 30 seconds",
+        "Video Orientation: Vertical (Instagram Standard)",
+        "Resolution: 720p or higher"
       ],
-      submission: "Submit your reel via the provided Google Drive link, email, or designated submission portal.",
-      prizes: "Exciting prizes for Winners",
+      technical_specs: {
+        frame_rates: [
+          "24fps for a cinematic look",
+          "30fps for standard reels",
+          "60fps+ for smooth slow-motion shots"
+        ],
+        filming_tips: [
+          "Focus on key moments and impactful highlights",
+          "Use a tripod or stabilizer for steady shots",
+          "Capture extra clips for smooth transitions",
+          "Ensure seamless edits and natural cuts"
+        ]
+      },
+      evaluation_criteria: [
+        "Showcasing Technology: Highlight innovative technologies, experiments, or engineering principles",
+        "Clarity & Conciseness: Present the subject in a crisp and engaging manner",
+        "Scientific Depth: Add insightful context through captions, overlays, or narration"
+      ],
+      important_guidelines: [
+        "Appropriate Content: Reels must maintain professionalism and avoid slang",
+        "Responsible Filming: Content must be suitable for public platforms"
+      ],
+      disclaimer: "This competition is an educational initiative. Participants retain full ownership of their reels and are solely responsible for their content. DES Pune University bears no liability for any submissions.",
+      submission: "Submit your reel by posting it on Instagram with the hashtag #DESPU and sending the link to the organizers.",
       contacts: [
         { name: "Abhishek Mayanalle", phone: "7058292809" },
         { name: "Nikhil karad", phone: "8483948935" }
