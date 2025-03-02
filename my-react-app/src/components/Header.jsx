@@ -67,8 +67,15 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <img src={logodes} width={190} height={190} alt="Logodes" className="mr-8 hidden lg:block" />
-        <img src={logodes} width={190} height={190} alt="Logodes" className="ml-auto lg:hidden" />
+        <a 
+          href="https://despu.edu.in/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="transition-transform hover:scale-105"
+        >
+          <img src={logodes} width={190} height={190} alt="DES Pune University" className="mr-8 hidden lg:block" />
+        </a>
+        <img src={logodes} width={190} height={190} alt="DES Pune University" className="ml-auto lg:hidden" />
 
         <Button
           className="ml-auto lg:hidden"

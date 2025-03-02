@@ -8,12 +8,10 @@ import {
   disc02,
   discord,
   discordBlack,
-  facebook,
   figma,
   file02,
   framer,
   homeSmile,
-  instagram,
   notification2,
   notification3,
   notification4,
@@ -31,10 +29,10 @@ import {
   searchMd,
   slack,
   sliders04,
-  telegram,
-  twitter,
   yourlogo,
 } from "../assets";
+
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 import roadmap5 from "../assets/roadmap/image-5.png";
 import roadmap6 from "../assets/roadmap/image-6.png";
@@ -60,18 +58,6 @@ export const navigation = [
     title: "Benefits",
     url: "#features",
   },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -95,6 +81,130 @@ export const brainwaveServicesIcons = [
 ];
 
 export const roadmap = [
+  {
+    id: "5",
+    title: "algoCraft",
+    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. Registration deadline: March 16, 2025.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    details: {
+      description: "🚀 Think Fast, Code Faster! Are you ready to test your data structures and algorithms skills? algoCraft is a thrilling coding competition designed to challenge your problem-solving abilities and optimize your coding speed.",
+      rounds: [
+        {
+          name: "Round 1: Elimination Round",
+          questions: [
+            "4 Easy Questions (10 pts each)",
+            "3 Medium Questions (20 pts each)",
+            "Top 50% of participants will advance to Round 2"
+          ]
+        },
+        {
+          name: "Round 2: Advanced Coding Round",
+          questions: [
+            "1 Easy Question (10 pts)",
+            "5 Medium Questions (20 pts each)",
+            "3 Hard Questions (30 pts each)"
+          ]
+        },
+        {
+          name: "Final Round: Ultimate Challenge",
+          questions: [
+            "5 Hard Questions (30 pts each)",
+            "5 Medium Questions (20 pts each)",
+            "Surprise (50 pts)"
+          ]
+        }
+      ],
+      guidelines: [
+        "Participants must write efficient and optimized code",
+        "Code can be written in C, C++ or Java",
+        "Solutions must be submitted within the given time limit for each round",
+        "Use of online resources or AI tools is strictly prohibited during the contest",
+        "Any form of plagiarism will result in immediate disqualification",
+        "The judges' decisions are final in case of disputes"
+      ],
+      submission: "Participants will submit their solutions on the competition portal",
+      eligibility: ["Open to all students with programming knowledge"],
+      prizes: "Exciting prizes for winners",
+      venue: "Mukunddas Lohia Academic Complex, Behind BMCC, 182, Agharkar Road, Shivajinagar, Pune 411 004",
+      important_dates: {
+        registration_deadline: "16th March 2025",
+        event_duration: "Two Days Event"
+      },
+      contacts: [
+        { name: "Krrish Rebbawar", phone: "+91-84 68 971 679" },
+        { name: "Ayush Ghodake", phone: "+91-81 80 973 523" },
+        { name: "Darshan Patil", phone: "+91-77 75 047 255" }
+      ]
+    },
+    colorful: true,
+    imageUrl: roadmap6
+  },
+  {
+    id: "4",
+    title: "Circuit Designing Competition",
+    text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits. Open to undergraduate students in teams of two.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    details: {
+      description: "⚡ Ultimate Circuit Challenge – Test your circuit design skills! Solve circuit problems and implement solutions within the given time. Showcase problem-solving, innovation, and circuit optimization abilities.",
+      guidelines: [
+        "Design circuits based on provided problem statements",
+        "Follow standard electrical and electronic engineering principles",
+        "Simulation tools or breadboard testing are allowed",
+        "Maintain respect and professionalism"
+      ],
+      eligibility: [
+        "Open to all Undergraduate students",
+        "Teams of two participants"
+      ],
+      judging_criteria: [
+        "Functionality – Does the circuit work as expected?",
+        "Efficiency – Optimization of power, space, and components",
+        "Innovation – Unique or creative design approaches",
+        "Communication – Clarity in documentation and presentation",
+        "Ethical Standards – Original designs only; plagiarism leads to disqualification"
+      ],
+      submission: "Participants must submit circuit designs within the allotted time. Submissions will be evaluated based on circuit diagrams, simulations, or live testing results",
+      prizes: "Exciting prizes for Winners",
+      contacts: [
+        { name: "Ritesh Ghonge", phone: "7666029088" },
+        { name: "Chinmay Kulkarni", phone: "7559406620" }
+      ]
+    },
+    colorful: true,
+    imageUrl: roadmap1
+  },
+  {
+    id: "2",
+    title: "Promptopia AI Battle Royale",
+    text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools. Individual competition with multiple rounds.",
+    date: "Navonmesh 2025",
+    status: "progress",
+    details: {
+      description: "🌟 Showcase Your Skills with a Prompt Engineering Competition! Join Promptopia - the ultimate platform to showcase your innovative prompt engineering skills. Ignite engaging discussions, refine your ability to shape AI responses, and transform the way you interact with technology!",
+      guidelines: [
+        "Participants will work on a predefined AI platform or tool provided during the competition",
+        "No external tools or assistance are allowed",
+        "Code of Conduct: Participants must maintain professionalism and respect towards peers and organizers",
+        "Disqualification: Plagiarism, offensive content, or late submissions will result in immediate disqualification",
+        "Tie-Breaker Rules: Efficiency Score – Highest score wins",
+        "Time Factor – Fastest submission (meeting quality standards) wins",
+        "Sudden Death Task – A 10-minute challenge judged on creativity and relevance"
+      ],
+      eligibility: [
+        "Open to All students",
+        "It is an individual competition"
+      ],
+      prizes: "Exciting prizes for Winners",
+      contacts: [
+        { name: "P. Varsha", phone: "+91 7051118842" },
+        { name: "Viraj Shah", phone: "+91 9175036206" }
+      ]
+    },
+    colorful: true,
+    imageUrl: roadmap3
+  },
   {
     id: "0",
     title: "Poster Competition",
@@ -163,36 +273,6 @@ export const roadmap = [
     imageUrl: roadmap2
   },
   {
-    id: "2",
-    title: "Promptopia AI Battle Royale",
-    text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools. Individual competition with multiple rounds.",
-    date: "Navonmesh 2025",
-    status: "progress",
-    details: {
-      description: "🌟 Showcase Your Skills with a Prompt Engineering Competition! Join Promptopia - the ultimate platform to showcase your innovative prompt engineering skills. Ignite engaging discussions, refine your ability to shape AI responses, and transform the way you interact with technology!",
-      guidelines: [
-        "Participants will work on a predefined AI platform or tool provided during the competition",
-        "No external tools or assistance are allowed",
-        "Code of Conduct: Participants must maintain professionalism and respect towards peers and organizers",
-        "Disqualification: Plagiarism, offensive content, or late submissions will result in immediate disqualification",
-        "Tie-Breaker Rules: Efficiency Score – Highest score wins",
-        "Time Factor – Fastest submission (meeting quality standards) wins",
-        "Sudden Death Task – A 10-minute challenge judged on creativity and relevance"
-      ],
-      eligibility: [
-        "Open to All students",
-        "It is an individual competition"
-      ],
-      prizes: "Exciting prizes for Winners",
-      contacts: [
-        { name: "P. Varsha", phone: "+91 7051118842" },
-        { name: "Viraj Shah", phone: "+91 9175036206" }
-      ]
-    },
-    colorful: true,
-    imageUrl: roadmap3
-  },
-  {
     id: "3",
     title: "Reels Making Competition",
     text: "🎥 Showcase Your Creativity & Capture the Spirit of Navonmesh 2025! Create engaging Instagram reels highlighting the technological innovations and exciting moments of the event.",
@@ -239,100 +319,6 @@ export const roadmap = [
     },
     colorful: true,
     imageUrl: roadmap4
-  },
-  {
-    id: "4",
-    title: "Circuit Designing Competition",
-    text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits. Open to undergraduate students in teams of two.",
-    date: "Navonmesh 2025",
-    status: "progress",
-    details: {
-      description: "⚡ Ultimate Circuit Challenge – Test your circuit design skills! Solve circuit problems and implement solutions within the given time. Showcase problem-solving, innovation, and circuit optimization abilities.",
-      guidelines: [
-        "Design circuits based on provided problem statements",
-        "Follow standard electrical and electronic engineering principles",
-        "Simulation tools or breadboard testing are allowed",
-        "Maintain respect and professionalism"
-      ],
-      eligibility: [
-        "Open to all Undergraduate students",
-        "Teams of two participants"
-      ],
-      judging_criteria: [
-        "Functionality – Does the circuit work as expected?",
-        "Efficiency – Optimization of power, space, and components",
-        "Innovation – Unique or creative design approaches",
-        "Communication – Clarity in documentation and presentation",
-        "Ethical Standards – Original designs only; plagiarism leads to disqualification"
-      ],
-      submission: "Participants must submit circuit designs within the allotted time. Submissions will be evaluated based on circuit diagrams, simulations, or live testing results",
-      prizes: "Exciting prizes for Winners",
-      contacts: [
-        { name: "Ritesh Ghonge", phone: "7666029088" },
-        { name: "Chinmay Kulkarni", phone: "7559406620" }
-      ]
-    },
-    colorful: true,
-    imageUrl: roadmap1
-  },
-  {
-    id: "5",
-    title: "algoCraft",
-    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. Registration deadline: March 16, 2025.",
-    date: "Navonmesh 2025",
-    status: "progress",
-    details: {
-      description: "🚀 Think Fast, Code Faster! Are you ready to test your data structures and algorithms skills? algoCraft is a thrilling coding competition designed to challenge your problem-solving abilities and optimize your coding speed.",
-      rounds: [
-        {
-          name: "Round 1: Elimination Round",
-          questions: [
-            "4 Easy Questions (10 pts each)",
-            "3 Medium Questions (20 pts each)",
-            "Top 50% of participants will advance to Round 2"
-          ]
-        },
-        {
-          name: "Round 2: Advanced Coding Round",
-          questions: [
-            "1 Easy Question (10 pts)",
-            "5 Medium Questions (20 pts each)",
-            "3 Hard Questions (30 pts each)"
-          ]
-        },
-        {
-          name: "Final Round: Ultimate Challenge",
-          questions: [
-            "5 Hard Questions (30 pts each)",
-            "5 Medium Questions (20 pts each)",
-            "Surprise (50 pts)"
-          ]
-        }
-      ],
-      guidelines: [
-        "Participants must write efficient and optimized code",
-        "Code can be written in C, C++ or Java",
-        "Solutions must be submitted within the given time limit for each round",
-        "Use of online resources or AI tools is strictly prohibited during the contest",
-        "Any form of plagiarism will result in immediate disqualification",
-        "The judges' decisions are final in case of disputes"
-      ],
-      submission: "Participants will submit their solutions on the competition portal",
-      eligibility: ["Open to all students with programming knowledge"],
-      prizes: "Exciting prizes for winners",
-      venue: "Mukunddas Lohia Academic Complex, Behind BMCC, 182, Agharkar Road, Shivajinagar, Pune 411 004",
-      important_dates: {
-        registration_deadline: "16th March 2025",
-        event_duration: "Two Days Event"
-      },
-      contacts: [
-        { name: "Krrish Rebbawar", phone: "+91-84 68 971 679" },
-        { name: "Ayush Ghodake", phone: "+91-81 80 973 523" },
-        { name: "Darshan Patil", phone: "+91-77 75 047 255" }
-      ]
-    },
-    colorful: true,
-    imageUrl: roadmap6
   }
 ];
 
@@ -414,10 +400,14 @@ export const collabApps = [
   },
 ];
 
+import desLogo from "../assets/logodes.svg";
+import ietLogo from "../assets/iet-logo-removebg-preview.png";
+import iicLogo from "../assets/iiclogo.png";
+
 export const pricing = [
   {
     id: "0",
-    title: "Day 1 - March 16, 2025",
+    title: "Day 1 - March 17, 2025",
     description: "Opening Day Events",
     features: [
       "9:00 AM - Registration Begins",
@@ -429,7 +419,7 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Day 2 - March 17, 2025",
+    title: "Day 2 - March 18, 2025",
     description: "Main Competition Day",
     features: [
       "9:00 AM - algoCraft Round 2",
@@ -452,6 +442,21 @@ export const pricing = [
     ],
   },
 ];
+
+export const eventOrganizers = {
+  organizer: {
+    name: "DES Pune University",
+    logo: desLogo
+  },
+  supporter: {
+    name: "IIC",
+    logo: iicLogo
+  },
+  sponsor: {
+    name: "IET Pune LN",
+    logo: ietLogo
+  }
+};
 
 export const benefits = [
   {
@@ -509,32 +514,32 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Facebook",
+    icon: FaFacebookF,
+    url: "https://www.facebook.com/DESPuneUniversity",
   },
   {
     id: "1",
     title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    icon: FaTwitter,
+    url: "https://x.com/des_pune",
   },
   {
     id: "2",
     title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/despuofficial/",
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "LinkedIn",
+    icon: FaLinkedinIn,
+    url: "https://www.linkedin.com/school/des-pune-university/posts/?feedView=all&viewAsMember=true",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "YouTube",
+    icon: FaYoutube,
+    url: "https://www.youtube.com/@DESPuneUniversity_",
   },
 ];
