@@ -10,7 +10,7 @@ const EventOrganizers = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-16">
           {/* Supporter - IIC (Left) */}
           <div className="flex flex-col items-center max-w-[300px]">
-            <a href="https://iic.mic.gov.in/" target="_blank" rel="noopener noreferrer" className="w-64 h-64 flex items-center justify-center rounded-2xl bg-n-7 border border-n-6 mb-6 p-4 hover:bg-n-6 transition-colors">
+            <a href="https://iic.mic.gov.in/" target="_blank" rel="noopener noreferrer" className="w-64 h-64 flex items-center justify-center rounded-2xl bg-white/90 backdrop-blur-sm border border-white/20 mb-6 p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <img 
                 src={eventOrganizers.supporter.logo} 
                 alt={eventOrganizers.supporter.name}
@@ -23,7 +23,7 @@ const EventOrganizers = () => {
 
           {/* Organizer - DES PU (Center) */}
           <div className="flex flex-col items-center max-w-[500px]">
-            <a href="https://despu.edu.in/" target="_blank" rel="noopener noreferrer" className="w-96 h-96 flex items-center justify-center rounded-2xl bg-n-7 border border-n-6 mb-6 p-6 hover:bg-n-6 transition-colors">
+            <a href="https://despu.edu.in/" target="_blank" rel="noopener noreferrer" className="w-96 h-96 flex items-center justify-center rounded-2xl bg-white/90 backdrop-blur-sm border border-white/20 mb-6 p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <img 
                 src={despuOrange}
                 alt={eventOrganizers.organizer.name}
@@ -31,14 +31,13 @@ const EventOrganizers = () => {
               />
             </a>
             <p className="text-xl font-semibold text-white mb-2">Organized by</p>
-     
             <p className="text-base text-n-4">School of Engineering and Technology</p>
             <p className="text-lg text-n-4">{eventOrganizers.organizer.name}</p>
           </div>
 
           {/* Sponsor - IET (Right) */}
           <div className="flex flex-col items-center max-w-[300px]">
-            <a href="https://india.theiet.org/" target="_blank" rel="noopener noreferrer" className="w-64 h-64 flex items-center justify-center rounded-2xl bg-n-7 border border-n-6 mb-6 p-4 hover:bg-n-6 transition-colors">
+            <a href="https://india.theiet.org/" target="_blank" rel="noopener noreferrer" className="w-64 h-64 flex items-center justify-center rounded-2xl bg-white/90 backdrop-blur-sm border border-white/20 mb-6 p-4 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <img 
                 src={eventOrganizers.sponsor.logo} 
                 alt={eventOrganizers.sponsor.name}
