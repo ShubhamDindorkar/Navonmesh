@@ -70,7 +70,7 @@ const Services = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Student Innovation</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Showcase your innovative projects and ideas at Navonmesh Tech Fest. Join us in shaping the future!
+                  Showcase your skills and ideas at Navonmesh Tech Fest. Join us in shaping the future!
                 </p>
               </div>
               <PhotoChatMessage />
@@ -90,7 +90,7 @@ const Services = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Build connections...</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  Participate in competitions and events led by industry experts and gain practical experience in tech competitions.
+                  Participate in competitions and events led by teachers and gain practical experience in tech competitions.
                 </p>
               </div>
               <PhotoChatMessage />
