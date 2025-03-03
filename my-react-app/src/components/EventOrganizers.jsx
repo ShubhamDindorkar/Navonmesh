@@ -31,8 +31,9 @@ const EventOrganizers = () => {
               />
             </a>
             <p className="text-xl font-semibold text-white mb-2">Organized by</p>
-            <p className="text-lg text-n-4">{eventOrganizers.organizer.name}</p>
+     
             <p className="text-base text-n-4">School of Engineering and Technology</p>
+            <p className="text-lg text-n-4">{eventOrganizers.organizer.name}</p>
           </div>
 
           {/* Sponsor - IET (Right) */}

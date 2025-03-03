@@ -84,7 +84,7 @@ export const roadmap = [
   {
     id: "5",
     title: "algoCraft",
-    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. Registration deadline: March 16, 2025.",
+    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. ",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
@@ -143,7 +143,7 @@ export const roadmap = [
   {
     id: "4",
     title: "Circuit Designing Competition",
-    text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits. Open to undergraduate students in teams of two.",
+    text: "Test your circuit design skills in this team competition. Design, troubleshoot, and optimize circuits.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
@@ -208,7 +208,7 @@ export const roadmap = [
   {
     id: "0",
     title: "Poster Competition",
-    text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more. Open to all students with teams of up to 4 members.",
+    text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more. ",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
@@ -244,7 +244,7 @@ export const roadmap = [
   {
     id: "1",
     title: "Fall Guys Tournament",
-    text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match. Top players advance to the Final Match where the ultimate champion will be crowned.",
+    text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match. ",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
@@ -256,7 +256,7 @@ export const roadmap = [
         "Players are eliminated as levels get tougher!",
         "If 200 players enter, we will have 5 matches",
         "The winners of each match (5 players) will face off in a Final Match",
-        "The Top 3 players from the Final Match will be declared Winners!"
+        "The Top 2 players from the Final Match will be declared Winners!"
       ],
       submission: "Participants are required to have an Epic Games account before the event.",
       eligibility: [
@@ -275,7 +275,7 @@ export const roadmap = [
   {
     id: "3",
     title: "Reels Making Competition",
-    text: "🎥 Showcase Your Creativity & Capture the Spirit of Navonmesh 2025! Create engaging Instagram reels highlighting the technological innovations and exciting moments of the event.",
+    text: "🎥 Showcase Your Creativity & Capture the Spirit of Navonmesh 2025! Create engaging Instagram reels highlighting the technology innovations and moments.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
@@ -410,35 +410,39 @@ export const pricing = [
     title: "Day 1 - March 17, 2025",
     description: "Opening Day Events",
     features: [
-      "9:00 AM - Registration Begins",
-      "10:00 AM - Poster Competition Setup",
-      "11:00 AM - algoCraft Round 1",
-      "2:00 PM - Circuit Design Competition",
-      "4:00 PM - Fall Guys Tournament"
-    ],
+      "10:00 AM to 3:00 PM - algoCraft (R1 & R2) | 301, 3rd Floor Lab",
+      "9:00 AM to 3:00 PM - Promptopia | 204-205, 2nd Floor Labs",
+      "9:00 AM to 2:00 PM - Fall Guys | 201-202, 2nd Floor Labs",
+      "Reel Making Competition | Entire Campus",
+      "Please arrive 15 minutes before event start",
+      "Report to respective venues on time"
+    ]
   },
   {
     id: "1",
     title: "Day 2 - March 18, 2025",
-    description: "Main Competition Day",
+    description: "Final Day Events",
     features: [
-      "9:00 AM - algoCraft Round 2",
-      "11:00 AM - Promptopia AI Battle",
-      "2:00 PM - Reels Competition",
-      "4:00 PM - algoCraft Finals",
-      "6:00 PM - Awards Ceremony"
-    ],
+      "9:00 AM to 12:00 PM - algoCraft Finals | 301, 3rd Floor Lab",
+      "9:00 AM to 12:00 PM - Promptopia Finals | 204-205 Labs",
+      "10:00 AM to 2:00 PM - Circuit Building | Physics & BEE Labs",
+      "10:00 AM to 2:00 PM - Poster Competition | Ground Floor Area",
+      "9:00 AM to 2:00 PM - Fall Guys | 201-202 Labs",
+      "Valedictory Function| BMCC-Cyrus Poonawala Auditorium"
+    ]
   },
   {
     id: "2",
     title: "Important Notes",
-    description: "Event Information",
+    description: "Event Guidelines",
     features: [
+      "This is a tentative schedule and may vary based on final plan",
       "Venue: DES Pune University",
-      "Bring Valid ID Cards",
-      "Registration Required",
-      "Refreshments Provided",
-      "Technical Support Available"
+      "Bring Valid College ID Cards",
+      "Registration is Mandatory",
+      "Technical Support Available",
+      "Internet Access Will Be Provided",
+      
     ],
   },
 ];
@@ -479,7 +483,7 @@ export const benefits = [
   {
     id: "2",
     title: "Network & Connect",
-    text: "Meet like-minded tech enthusiasts, industry experts, and potential collaborators in a vibrant environment.",
+    text: "Meet like-minded tech enthusiasts and potential collaborators in a vibrant environment.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -487,7 +491,7 @@ export const benefits = [
   {
     id: "3",
     title: "Win Exciting Prizes",
-    text: "Compete for attractive prizes and recognition across various events and competitions.",
+    text: "Compete for attractive cash prizes and recognition across various events and competitions.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,

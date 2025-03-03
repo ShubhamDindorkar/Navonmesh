@@ -36,7 +36,7 @@ const FAQ = () => {
     {
       id: 4,
       question: "What are the main events in Navonmesh?",
-      answer: "Key events include Poster Competition, Project Showcase, Hackathon, and various technical workshops focusing on AI, Cybersecurity, and emerging technologies."
+      answer: "Key events include Poster Competition, Fall Guys, Promptopia, algoCraft, and Reel Making Competition."
     },
     {
       id: 5,
