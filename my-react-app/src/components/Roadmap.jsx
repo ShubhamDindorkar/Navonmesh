@@ -37,8 +37,8 @@ const Roadmap = () => {
 
   const handleDownloadTemplate = () => {
     const link = document.createElement('a');
-    link.href = 'https://docs.google.com/document/d/1O3OcgYB-3nOISNuYLq80oy2_z7crxkQ7/export?format=pdf';
-    link.download = 'Navonmesh_Poster_Template.pdf';
+    link.href = '/template/Navonmeshtemplate.pdf';
+    link.download = 'Navonmeshtemplate.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
