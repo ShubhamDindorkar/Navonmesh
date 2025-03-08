@@ -84,14 +84,14 @@ export const roadmap = [
   {
     id: "5",
     title: "algoCraft",
-    text: "Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot. ",
+    text: "Think Fast, Code Faster! Challenge your data structures and algorithms skills through multiple rounds. Solve problems efficiently and compete for the top spot.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
-      description: "🚀 Think Fast, Code Faster! Are you ready to test your data structures and algorithms skills? algoCraft is a thrilling coding competition designed to challenge your problem-solving abilities and optimize your coding speed.",
+      description: "Are you ready to test your data structures and algorithms skills? algoCraft is a thrilling coding competition designed to challenge your problem-solving abilities and optimize your coding speed. Compete with the best minds and prove your expertise in algorithmic problem-solving!",
       rounds: [
         {
-          name: "Round 1: Elimination Round",
+          name: "🟢 Round 1: Elimination Round",
           questions: [
             "4 Easy Questions (10 pts each)",
             "3 Medium Questions (20 pts each)",
@@ -99,7 +99,7 @@ export const roadmap = [
           ]
         },
         {
-          name: "Round 2: Advanced Coding Round",
+          name: "🔵 Round 2: Advanced Coding Round",
           questions: [
             "1 Easy Question (10 pts)",
             "5 Medium Questions (20 pts each)",
@@ -107,7 +107,7 @@ export const roadmap = [
           ]
         },
         {
-          name: "Final Round: Ultimate Challenge",
+          name: "🔴 Final Round: Ultimate Challenge",
           questions: [
             "5 Hard Questions (30 pts each)",
             "5 Medium Questions (20 pts each)",
@@ -128,8 +128,7 @@ export const roadmap = [
       prizes: "Exciting prizes for winners",
       venue: "Mukunddas Lohia Academic Complex, Behind BMCC, 182, Agharkar Road, Shivajinagar, Pune 411 004",
       important_dates: {
-        registration_deadline: "16th March 2025",
-        event_duration: "Two Days Event"
+        registration_deadline: "14th March 2025"
       },
       contacts: [
         { name: "Krrish Rebbawar", phone: "+91-84 68 971 679" },
@@ -165,8 +164,15 @@ export const roadmap = [
         "Communication – Clarity in documentation and presentation",
         "Ethical Standards – Original designs only; plagiarism leads to disqualification"
       ],
+      tools: [
+        "Provided: Circuit simulation software or physical components",
+        "❌ No external assistance or unauthorized tools permitted"
+      ],
       submission: "Participants must submit circuit designs within the allotted time. Submissions will be evaluated based on circuit diagrams, simulations, or live testing results",
       prizes: "Exciting prizes for Winners",
+      important_dates: {
+        registration_deadline: "14th March 2025"
+      },
       contacts: [
         { name: "Ritesh Ghonge", phone: "7666029088" },
         { name: "Chinmay Kulkarni", phone: "7559406620" }
@@ -178,17 +184,25 @@ export const roadmap = [
   {
     id: "2",
     title: "Promptopia AI Battle Royale",
-    text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools. Individual competition with multiple rounds.",
+    text: "Test your prompt engineering skills in this AI competition. Craft precise, creative prompts to generate the best outputs from AI tools.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
       description: "🌟 Showcase Your Skills with a Prompt Engineering Competition! Join Promptopia - the ultimate platform to showcase your innovative prompt engineering skills. Ignite engaging discussions, refine your ability to shape AI responses, and transform the way you interact with technology!",
+      why_join: [
+        "Flaunt your Prompt Engineering skills",
+        "Learn to make quick decisions under the gun!",
+        "Connect with peers and experts in the AI field",
+        "Skyrocket your AI learning Capabilities"
+      ],
       guidelines: [
         "Participants will work on a predefined AI platform or tool provided during the competition",
         "No external tools or assistance are allowed",
         "Code of Conduct: Participants must maintain professionalism and respect towards peers and organizers",
-        "Disqualification: Plagiarism, offensive content, or late submissions will result in immediate disqualification",
-        "Tie-Breaker Rules: Efficiency Score – Highest score wins",
+        "Disqualification: Plagiarism, offensive content, or late submissions will result in immediate disqualification"
+      ],
+      tie_breaker_rules: [
+        "Efficiency Score – Highest score wins",
         "Time Factor – Fastest submission (meeting quality standards) wins",
         "Sudden Death Task – A 10-minute challenge judged on creativity and relevance"
       ],
@@ -197,6 +211,9 @@ export const roadmap = [
         "It is an individual competition"
       ],
       prizes: "Exciting prizes for Winners",
+      important_dates: {
+        registration_deadline: "14th March 2025"
+      },
       contacts: [
         { name: "P. Varsha", phone: "+91 7051118842" },
         { name: "Viraj Shah", phone: "+91 9175036206" }
@@ -208,11 +225,16 @@ export const roadmap = [
   {
     id: "0",
     title: "Poster Competition",
-    text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more. ",
+    text: "Showcase your research through creative poster presentations on topics like AI, Cybersecurity, Emerging Technologies, and more.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
       description: "🎨 Ignite Creativity, Inspire Innovation! A Poster Presentation is a great way to visually share your work, spark discussions, and build your communication and design skills.",
+      why_join: [
+        "Share your research in a creative and engaging way",
+        "Learn to present complex ideas simply and effectively",
+        "Connect with peers and experts in your field"
+      ],
       topics: [
         "🚀 AI & Machine Learning for Social Good",
         "🔒 Cybersecurity & Blockchain",
@@ -222,17 +244,20 @@ export const roadmap = [
         "🌍 Sustainability & Beyond"
       ],
       guidelines: [
-        "The poster should be well-structured and include: Title, Introduction, Objective, Abstract, Methodology, Results, and Conclusion, with high-resolution visuals.",
-        "Design must be created using Canva, Adobe Illustrator or other graphic designing tools, with A0 size (48x36 inches, vertical orientation).",
-        "All posters must be submitted within deadline, with 5-10 minutes presentation time.",
-        "All sources must be properly cited using IEEE or APA format."
+        "The poster should be well-structured and include: Title, Introduction, Objective, Abstract, Methodology, Results, and Conclusion, with high-resolution visuals",
+        "Design must be created using Canva, Adobe Illustrator or other graphic designing tools, with a poster size of 2 Feet x 3 Feet (24x36 inches, vertical/portrait orientation)",
+        "All posters must be submitted within deadline, with 5-10 minutes presentation time",
+        "All sources must be properly cited using IEEE or APA format"
       ],
-      submission: "Participants are required to submit both a hard copy (mandatory) and a soft copy of their poster at the time of Event.",
+      submission: "Participants are required to submit both a hard copy (mandatory) and a soft copy of their poster at the time of Event",
       eligibility: [
         "Open to All students",
         "Maximum 4 students are allowed per poster(group)"
       ],
       prizes: "Exciting prizes for Winners",
+      important_dates: {
+        registration_deadline: "14th March 2025"
+      },
       contacts: [
         { name: "Sameer sorte", phone: "93224 92678" },
         { name: "Krishna Dhamdhere", phone: "9322872997" }
@@ -244,11 +269,16 @@ export const roadmap = [
   {
     id: "1",
     title: "Fall Guys Tournament",
-    text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match. ",
+    text: "Battle it out in Fall Guys: Ultimate Knockout! Individual competition with 40 players per match.",
     date: "Navonmesh 2025",
     status: "progress",
     details: {
       description: "🎮 Stumble, Battle, Triumph – Claim the Crown! An exciting individual competition where you battle against everyone to become the ultimate champion.",
+      game_details: [
+        "Game: Fall Guys: Ultimate Knockout",
+        "Mode: Individual Competition – No teams, just YOU against everyone!",
+        "Maximum Players: 40 Players per match"
+      ],
       guidelines: [
         "Epic Games Account is mandatory",
         "Ensure you have an account before the event!",
@@ -258,12 +288,15 @@ export const roadmap = [
         "The winners of each match (5 players) will face off in a Final Match",
         "The Top 2 players from the Final Match will be declared Winners!"
       ],
-      submission: "Participants are required to have an Epic Games account before the event.",
+      submission: "Participants are required to have an Epic Games account before the event",
       eligibility: [
         "Open to all students",
         "Maximum 1 participant per game"
       ],
       prizes: "Exciting prizes for Winners",
+      important_dates: {
+        registration_deadline: "14th March 2025"
+      },
       contacts: [
         { name: "Atharva Kardile", phone: "8625848939" },
         { name: "Megha Teli", phone: "8308124360" }
@@ -283,7 +316,7 @@ export const roadmap = [
       guidelines: [
         "Theme: Event Highlights of Navonmesh 2025",
         "Platform: Instagram Reels",
-        "Mandatory Hashtag: #DESPU",
+        "Mandatory Hashtags: #DESPuneUniversity #UniversityWithLegacy #DeccanEducationSociety #InPursuitOfKnowledge",
         "Maximum Duration: 30 seconds",
         "Video Orientation: Vertical (Instagram Standard)",
         "Resolution: 720p or higher"
@@ -302,16 +335,19 @@ export const roadmap = [
         ]
       },
       evaluation_criteria: [
-        "Showcasing Technology: Highlight innovative technologies, experiments, or engineering principles",
-        "Clarity & Conciseness: Present the subject in a crisp and engaging manner",
+        "Showcasing Technology: Highlight innovative technologies, experiments, or engineering principles observed at Navonmesh 2025",
+        "Clarity & Conciseness: Present the subject in a crisp and engaging manner within 30 seconds",
         "Scientific Depth: Add insightful context through captions, overlays, or narration"
       ],
       important_guidelines: [
         "Appropriate Content: Reels must maintain professionalism and avoid slang",
         "Responsible Filming: Content must be suitable for public platforms"
       ],
-      disclaimer: "This competition is an educational initiative. Participants retain full ownership of their reels and are solely responsible for their content. DES Pune University bears no liability for any submissions.",
-      submission: "Submit your reel by posting it on Instagram with the hashtag #DESPU and sending the link to the organizers.",
+      disclaimer: "This competition is an educational initiative to enhance creativity and technical skills among engineering and technology students. Participation is voluntary, and all content must comply with applicable laws and ethical standards. Participants retain full ownership of their reels and are solely responsible for their content. DES Pune University bears no liability for any submissions.",
+      submission: "Submit your reel by posting it on Instagram with the required hashtags",
+      important_dates: {
+        registration_deadline: "14th March 2025"
+      },
       contacts: [
         { name: "Abhishek Mayanalle", phone: "7058292809" },
         { name: "Nikhil karad", phone: "8483948935" }
