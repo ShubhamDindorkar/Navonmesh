@@ -36,7 +36,8 @@ const Roadmap = () => {
   }, [selectedEvent, closeModal]);
 
   const handleDownloadTemplate = () => {
-    window.open('/src/assets/template/Navonmeshtemplate.pdf', '_blank');
+    const pdfUrl = 'https://docs.google.com/document/d/1O3OcgYB-3nOISNuYLq80oy2_z7crxkQ7/edit?tab=t.0';
+    window.open(pdfUrl, '_blank');
   };
 
   // Handle click outside modal
