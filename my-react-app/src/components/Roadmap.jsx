@@ -36,8 +36,12 @@ const Roadmap = () => {
   }, [selectedEvent, closeModal]);
 
   const handleDownloadTemplate = () => {
-    const pdfUrl = 'https://docs.google.com/document/d/1O3OcgYB-3nOISNuYLq80oy2_z7crxkQ7/edit?tab=t.0';
-    window.open(pdfUrl, '_blank');
+    const link = document.createElement('a');
+    link.href = 'https://docs.google.com/document/d/1O3OcgYB-3nOISNuYLq80oy2_z7crxkQ7/export?format=pdf';
+    link.download = 'Navonmesh_Poster_Template.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   // Handle click outside modal
