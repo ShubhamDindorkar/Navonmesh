@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -14,8 +14,41 @@ const Roadmap = () => {
     setSelectedEvent(event);
   };
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setSelectedEvent(null);
+  }, []);
+
+  // Handle escape key press
+  useEffect(() => {
+    const handleEscapeKey = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    if (selectedEvent) {
+      document.addEventListener('keydown', handleEscapeKey);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey);
+    };
+  }, [selectedEvent, closeModal]);
+
+  const handleDownloadTemplate = () => {
+    const link = document.createElement('a');
+    link.href = '/template/Navonmeshtemplate.pdf';
+    link.download = 'Navonmeshtemplate.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  // Handle click outside modal
+  const handleModalClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
   };
 
   return (
@@ -73,10 +106,13 @@ const Roadmap = () => {
         </div>
 
         {selectedEvent && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
-            <div className="relative w-full max-w-[90%] sm:max-w-2xl p-4 sm:p-8 bg-n-8 rounded-2xl sm:rounded-[2.5rem] max-h-[90vh] overflow-y-auto">
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 cursor-pointer"
+            onClick={handleModalClick}
+          >
+            <div className="relative w-full max-w-[90%] sm:max-w-2xl p-4 sm:p-8 bg-n-8 rounded-2xl sm:rounded-[2.5rem] max-h-[90vh] overflow-y-auto cursor-default">
               <button
-                className="absolute top-4 right-4 sm:top-6 sm:right-6 text-n-4 hover:text-n-1"
+                className="absolute top-4 right-4 sm:top-6 sm:right-6 text-n-4 hover:text-n-1 p-2 text-xl"
                 onClick={closeModal}
               >
                 ✕
@@ -190,7 +226,14 @@ const Roadmap = () => {
                   </div>
                 )}
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
-
+                  {selectedEvent.title === "Poster Competition" && (
+                    <Button
+                      onClick={handleDownloadTemplate}
+                      className="w-full sm:w-auto text-sm sm:text-base bg-white/10 hover:bg-white/20"
+                    >
+                      Download Template
+                    </Button>
+                  )}
                   <Button
                     href="https://docs.google.com/forms/d/e/1FAIpQLScf9nY4_HNmwNb9-EYHOb3tzksKrC7JwXErk8QQGCh0HQQAEA/viewform"
                     target="_blank"

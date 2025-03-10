@@ -75,15 +75,13 @@ const Header = () => {
         >
           <img src={logodes} width={190} height={190} alt="DES Pune University" className="mr-8 hidden lg:block" />
         </a>
-        <img src={logodes} width={190} height={190} alt="DES Pune University" className="ml-auto lg:hidden" />
 
-        <Button
-          className="ml-auto lg:hidden"
-          px="px-3"
+        <button
+          className="ml-auto lg:hidden p-3 text-white hover:text-orange-400 transition-colors"
           onClick={toggleNavigation}
         >
           <MenuSvg openNavigation={openNavigation} />
-        </Button>
+        </button>
       </div>
     </div>
   );
