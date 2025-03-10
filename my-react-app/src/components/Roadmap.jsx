@@ -81,14 +81,7 @@ const Roadmap = () => {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 md:mb-8 gap-3">
                     <Tagline className="text-base sm:text-lg">{item.date}</Tagline>
 
-                    <div className="flex items-center px-3 sm:px-4 py-1 bg-n-1 rounded text-n-8">
-                      <img
-                        className="mr-2 w-4 h-4 sm:w-5 sm:h-5"
-                        src={item.status === "done" ? check2 : loading1}
-                        alt={status}
-                      />
-                      <div className="tagline text-sm sm:text-base">{status}</div>
-                    </div>
+
                   </div>
 
                   <div className="relative mb-6 sm:mb-8 -mx-4 sm:-mx-8 md:-mx-12 aspect-[16/9] overflow-hidden rounded-lg">
